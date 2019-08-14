@@ -7,7 +7,7 @@
     <title>Express Skills</title>
 </head>
 <body>
-    <h1>Skills</h1>
+    <h1>Skills as of <%= time %></h1>
     <ul>
       <% skills.forEach(function(s, idx) { %>
         <li>
@@ -16,6 +16,7 @@
           <%= s.done ? 'done' : 'not done' %>
         </li>
       <% }); %>
-    </ul>    
+    </ul>  
+    <a href="skills/new">Add Skill</a>  
 </body>
 </html>
