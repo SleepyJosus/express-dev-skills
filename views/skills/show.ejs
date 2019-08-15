@@ -10,5 +10,9 @@
     <h1>Skill #<%= skillNum %></h1>
     <h3><%= skill.skill %></h3>
     <h3>Complete: <%= skill.done ? 'Yes' : 'No' %></h3>   
+    <form action="/skills/<%= skillNum - 1 %>/edit"
+        class="delete-form" method="GET">
+        <button type="submit">Edit</button>
+    </form>
 </body>
 </html>
